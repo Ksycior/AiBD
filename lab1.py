@@ -2,10 +2,14 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+
+# Zadanie 3
 
 # Deklaracja funkcji
 def function(x):
-    return x**2+5
+    return x ** 2 + 5
+
 
 # Deklaracja argumentów
 x1 = np.linspace(-1, 1)
@@ -36,3 +40,8 @@ plt.ylabel('Y label')
 plt.xlabel('X label')
 plt.show()
 
+# Zadanie 4
+
+df2 = pd.DataFrame(np.array([["Mateusz", "Ksyta", 14, "M"], ["Mateusz", "Nowak", 15, "M"], ["Kuba", "Ksyta", 16, "M"],
+                             ["Kasia", "Kowalczyk", 17, "F"], ["Łucja", "Kruk", 18, "F"]]),
+                   columns=['name', 'surname', 'age', 'sex'])
