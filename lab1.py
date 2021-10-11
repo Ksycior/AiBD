@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 # Zadanie 3
 
 # Deklaracja funkcji
@@ -42,6 +43,17 @@ plt.show()
 
 # Zadanie 4
 
-df2 = pd.DataFrame(np.array([["Mateusz", "Ksyta", 14, "M"], ["Mateusz", "Nowak", 15, "M"], ["Kuba", "Ksyta", 16, "M"],
-                             ["Kasia", "Kowalczyk", 17, "F"], ["Łucja", "Kruk", 18, "F"]]),
-                   columns=['name', 'surname', 'age', 'sex'])
+# Definiowanie Dataframe
+
+df = pd.DataFrame({'name': ['Mateusz', 'Mateusz', 'Kuba', 'Kasia',
+                   'Łucja'], 'surname': ['Ksyta', 'Nowak', 'Ksyta', 'Kowalczyk', 'Kruk'], 'age': [14, 15, 16, 17, 18],
+                   'sex': ['M', 'M', 'M', 'F', 'F']})
+
+# Wyświetlanie informacji
+df.info()
+
+# Opis danych
+print(df.describe())
+
+# Trzy pierwsze rekordy
+print(df.head(3))
