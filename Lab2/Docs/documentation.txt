@@ -1,0 +1,8 @@
+Początkowe dane na początku przerabiam w taki sposób, aby program dał radę je wczytać oraz stworzyć z nich obiekt
+'dataframe'. Wartości -9999 odpowiadające brakowi danych zamieniłem na wartość 'Nan'. Wynikowe, przerobione
+dane zapisuję w pliku 'working_data.txt', to jego użyję do obliczeń.
+Na początku każdą kolumnę odpowiadającą kolejnym dniom miesiąca zmieniam na dwie kolumny: 'month' oraz 'day'.
+Po ograniczeniu liczby kolumn zrobiłem to samo z kolumną 'element' zawierającą wartości TMAX, TMIN, PRCP - tworzę
+trzy dodatkowe kolumny o tych nazwach.
+Następnie złączyłem kolumny 'year', 'month' oraz 'day' w jedną kolumnę 'date'.
+Na sam koniec sformatowałem wcześniej wspomnianą tablę tak, aby pozostały jedynie kolumny daty, PPCP, TMAX oraz TMIN.
